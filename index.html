@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mauritius CLEWS</title>
+
+  <!-- JAVASCRIPT -->
+  <script src="./lib/jquery/dist/jquery.min.js"></script>
+  <script src="./lib/fullpage/jquery.fullPage.min.js"></script>
+  <script src="./lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./lib/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./lib/fullpage/jquery.fullPage.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/landing.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/roboto.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/brandbar.css">
+  <link rel="stylesheet" type="text/css" href="./lib/fontawesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./stylesheets/animate.css">
+
+</head>
+
+<body>
+  <!--[if IE]>
+		<div>
+
+    <div id="brand-bar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container brandbar-header">
+        <div class="row">
+          <div class="col-md-3">
+            <a id="navLanChg" class="navbar-brand" href="http://www.un.org/en/index.html">Welcome to the United Nations</a>
+          </div>
+          <div class="col-md-9">
+            <a class="site-link" href="https://unite.un.org/analytics/desa/modellingtools">Back to DESA Modelling Tools Homepage
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+		<div class="main-container container">
+      <br><br><br>
+      <div class="row">
+        <div class="col-md-1">
+            <img src="./img/logos/logo.png" alt="Home" class="noprint" style="padding-top:15px"/>
+        </div>
+        <div class="col-md-11">
+            <h1>MAURITIUS CLEWS<h1>
+        </div>
+      </div>
+			<div class="row">
+						<div class="col-md-12 sec-center">
+							<h2><strong>Sorry, your browser is not supported</strong></h2>
+							</br>
+							<p style="font-size:20px;">This web application is designed to work on the following web browsers: Google Chrome, Mozilla Firefox, Safari, and Microsoft Internet Explorer 10 or higher. </br> </p>
+							<p style="font-size:20px;"> Please use or download the latest version here:</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="col-md-4 col-md-offset-1">
+								<a href="https://www.google.com/chrome">
+									<img src="./img/browsers/browser_chrome.png" class="browser"></img>
+								</a>
+							</div>
+							<div class="col-md-4 col-md-offset-2">
+								<a href="http://www.apple.com/safari/">
+									<img src="./img/browsers/browser_safari.png" class="browser"></img>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="col-md-4 col-md-offset-1">
+								<a href="https://www.mozilla.org/en-US/firefox/new/">
+									<img src="./img/browsers/browser_firefox.png" class="browser"></img>
+								</a>
+							</div>
+							<div class="col-md-4 col-md-offset-2">
+								<a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+									<img src="./img/browsers/browser_msie.png" class="browser"></img>
+								</a>
+							</div>
+						</div>
+			</div>
+		</div>
+
+		</div>
+    <![endif]-->
+
+	<![if !IE]>
+
+  <div id="brand-bar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container brandbar-header">
+      <div class="row">
+        <div class="col-md-3">
+          <a id="navLanChg" class="navbar-brand" href="http://www.un.org/en/index.html">Welcome to the United Nations</a>
+        </div>
+        <div class="col-md-9">
+          <a class="site-link" href="https://unite.un.org/analytics/desa/modellingtools">Back to DESA Modelling Tools Homepage
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="buttonHolder" class="row">
+
+    <div id='landingButton'>
+      <a href="playground.html" class='dashboard-button'>Explore the Model</a>
+    </div>
+
+    <div id='scrollText' onclick="downArrow()">
+      <a onclick="downArrow()" class='guide-button'>Start Guide</a>
+    </div>
+  </div>
+  <div id="topArrow" class="arrow-up" style="display: none;">
+    <div class="imgsContainer">
+      <button id="arrowUp" onclick="upArrow()"><i class="fa fa-chevron-up"></i></button>
+    </div>
+  </div>
+  <div id="bottomArrow" class="arrow-down" style="display: none;">
+    <div class="imgsContainer">
+      <button id="arrowDown" onclick="downArrow()"><i class="fa fa-chevron-down"></i></button>
+    </div>
+  </div>
+  <div id='staticButton' style="display: none;">
+    <a href="playground.html" class='dashboard-button'>Explore the Model</a>
+  </div>
+
+  <div id="fullpage">
+
+    <div class="section" id="section0">
+      <div id="section-heading0" class='container'>
+        <h2 class='title'>Mauritius Clews</h2>
+        <p class='landing-text splash'>Mauritius receives plentiful rainfall, however the high population density of the island puts pressure on water resources. The threat of reduced precipitation as a result of climate change is therefore a major concern. The Mauritius government
+          has demonstrated strong leadership in the promotion of a broad range of renewable energy sources, including ethanol. Increasing bio-fuels, however, carries potentially important impacts on the use of water and land.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="section" id="section1">
+      <div id="section-heading3" class="container">
+        <div class="row">
+          <h1 class="section-heading">Introduction</h1>
+          <div class="col-md-6">
+            <br>
+            <p class='landing-text'>This application of the CLEWs methodology for Mauritius demonstrates how the tool can be applied to assess trade-offs and synergies between the promotion of renewable energy and other goals. The analysis explores how mandated targets for renewable
+              electricity and biofuels under alternative climate change scenarions could impact water and land use, sugar production, energy generation, and CO2 emissions, and a host of other variables.
+            </p>
+            <p class='landing-text'>
+              <b>Model Development</b>
+              <br> This a basic model to find through an optimisation process the system configuration that meets a set of pre-defined demands at the lowest cost. The main building blocks are a plant by plant representation of the power sector and a land
+              supply curve disaggregating arable land into different types of land suitability (i.e. different yields) and water supply (i.e. irrigation vs rain-fed).
+            </p>
+          </div>
+          <div class="col-md-6 image-container">
+            <img class="side-image" onclick="window.open(this.src)" src="img/clewsmodel.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="section2">
+      <div id="section-heading3" class="container">
+        <div class="row">
+          <h1 class="section-heading">Policy Focus</h1>
+          <p class='landing-text'>The analysis focused on two policy goals:</p>
+          <div class="col-md-6">
+            <p class='landing-text'>
+              <b>A target for renewable electricity production.</b> A 35% share of renewable electricity generation in the total electricity mix by 2025 is part of the current sustainability strategy (Mauritius Ile Durable). The aim of this policy is
+              to reduce reliance on fuel imports (imported fuel oil and coal are the main fuels used in power generation) to improve energy security, reduce import bills and cut carbon emissions. The analysis explored how this policy would impact the
+              use of other resources. It included sensitivity analysis to explore how different levels of mandated renewable shares would affect these impacts.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p class='landing-text'>
+              <b>A renewable fuel standard mandating the blending of ethanol into gasoline.</b> While a biofuel policy is still expected for Mauritius it is less clear what the target(s) will be. The aim of the policy is to improve income for sugar growers
+              and to displace imported liquid fuels to improve self-sufficiency in fuel supply. The analysis explored how this policy would impact the use of other resources. It included sensitivity analysis to explore how different levels of mandated
+              renewable fuel shares would affect these impacts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="section3">
+      <div id="section-heading3" class="container">
+        <div class="row">
+          <h1 class="section-heading">Informing Sustainable Development</h1>
+          <div class="col-md-5">
+            <br>
+            <p class='landing-text'>The modelling exercise sheds light on the interlinkages across a number of SDGs. For example, the attainment of <b>SDG 7</b> (sustainable energy) may have both positive and negative impacts on other goals, such as :
+              <ul>
+                <li>SDG 2 (sustainable agriculture)</li>
+                <li>SDG 6 (sustainable water management)</li>
+                <li>SDG 8 (decent work and economic growth)</li>
+                <li>SDG 12 (responsible production and consumption)</li>
+                <li>SDG 13 (climate action)</li>
+                <li>SGD 15 (sustainable use of terrestrial ecosystems)</li>
+            </p>
+          </div>
+          <div class="col-md-6 col-md-offset-1 image-container">
+            <img class="side-image" onclick="window.open(this.src)" src="img/sdg.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="section4">
+      <div id="section-heading3" class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="section-heading">How to Use this Tool</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <p class="access-text">The visualisation displays results for 48 scenarios. These are defined by:
+              <ul>
+                <li>Four renewable policy targets for ethanol and gasoline blends;
+                </li>
+                <li>Four targets setting minimum proportions of renewable sources in the generation of electricity; and
+                  <li>Three climate scenarios. </li>
+              </ul>Implementation of renewable policies follow specific time patterns, as described in supplementary material. The visualisation displays results for electricity generation by source, total use of water, use of land for sugar production, total
+              CO2 emissions, and a measure of energy import dependence defined as total energy imports over total primary energy supply. (Supplementary includes results for other selected variables).
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p class="access-text">
+              The baseline scenario includes no renewable policy and no change in climate. Rather than fixing the visualisation to compare the selected scenario relative to the baseline, the user can select a desired scenario and compare it to any of the remaining
+              48 scenarios. Users must thus exert caution when interpreting results.
+            </p>
+            <p class="access-text">
+              Once the scenario of interest and its reference are selected, the visualisation displays results as the percent change in the selected scenario relative to its reference for each year of the analysed period. To facilitate interpretation, most graphs include
+              a small line plot of the values in the reference scenario is displayed at the upper-right corner.
+            </p>
+            <p class="access-text">
+              See the code of the model, data, and other supplementary material in this <a href="https://github.com/UN-DESA-Modelling/CLEWS_Mauritius">link</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="section5">
+      <div id="section-heading3" class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="section-heading">How to Use this Tool</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <img src="img/playground.png" class="main-image"></img>
+            <img src="img/playground-overlay.png" id="playground-overlay" class="main-image overlay"></img>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+    function endGuide() {
+      $(document).ready(function() {
+        $.fn.fullpage.moveTo(6);
+      })
+    }
+
+    function upArrow() {
+      $(document).ready(function() {
+        $.fn.fullpage.moveSectionUp();
+      })
+    }
+
+    function downArrow() {
+      $(document).ready(function() {
+        $.fn.fullpage.moveSectionDown();
+      })
+    }
+  </script>
+
+
+
+  <script type="text/javascript" src="./js/landing.js"></script>
+
+</body>
+
+</html>
